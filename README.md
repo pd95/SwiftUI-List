@@ -23,8 +23,7 @@ struct DataWrapper: Identifiable {
 
 Looking at the images below, we confirm that on iPhone this really os the most basic form we see in many apps. On macOS the list looks even bolder: there are even no visible dividers!
 
-<img alt="Minimal List on iPhone" src="_images/Minimal_iPhoneSE_iOS14.png" width="300" />
-<img alt="Minimal List on macOS" src="_images/Minimal_macOS11.png" width="400" />
+<img alt="Minimal List on iPhone" src="_images/Minimal_iPhoneSE_iOS14.png" width="300" />  <img alt="Minimal List on macOS" src="_images/Minimal_macOS11.png" width="400" />
 
 ---
 
@@ -65,8 +64,7 @@ To enable **Multi-Selection** we simply have to adjust our state variable: Inste
 
 What I really like about the macOS implementation: Out-of-the-box it supports all the possible selection modes using the keyboard modifiers to ease the selection of multiple rows (using Shift+click) and add/remove single rows to the existing selection (using CMD+click). Selection with the arrow keys is also possible!
 
-<img alt="Minimal List on macOS with multiple rows selected" src="_images/Minimal_selected_multiple_rows_macOS11.png" width="400" />
-<img alt="Minimal List on iPhone with multiple rows selected" src="_images/Minimal_selected_multiple_rows_iPhoneSE_iOS14.png" width="300" />
+<img alt="Minimal List on macOS with multiple rows selected" src="_images/Minimal_selected_multiple_rows_macOS11.png" width="400" />  <img alt="Minimal List on iPhone with multiple rows selected" src="_images/Minimal_selected_multiple_rows_iPhoneSE_iOS14.png" width="300" />
 
 ---
 
@@ -92,8 +90,7 @@ As you can see, we use the `Array`s `move` method which takes in parameter `from
 On macOS the availability of the reordering functionality is not visible atonce, but a Mac user commonly knows that he can select multiple lines and then drag them to their destination. Exactly how it works here.  
 On the iPhone we see immediately reordering handles showing up on the right side of each line. They are independent of the selection. As a consequence, it is only possible to move one line at the a time.  
 
-<img alt="List moving multiple rows on macOS" src="_images/List_moving_row_macOS11.gif" width="400" />
-<img alt="List on iPhone with row reordering UI" src="_images/List_moving_row_iPhoneSE_iOS14.png" width="300" />
+<img alt="List moving multiple rows on macOS" src="_images/List_moving_row_macOS11.gif" width="400" />  <img alt="List on iPhone with row reordering UI" src="_images/List_moving_row_iPhoneSE_iOS14.png" width="300" />
 
 ---
 
@@ -116,8 +113,7 @@ List(selection: $selection) {
 
 When testing this, it becomes immediately visible that swipe to delete is really intended to be applied to a single row: it ignores any selection. Even more: on **iPhone it basically does not work as long as the list is in edit mode**. This means selection & reordering are mutually exclusive to "swipe to delete". If you want to provide a deletion functionality based on the current selection, you will have to add a custom delete button to the toolbar.
 
-<img alt="List deleting rows on macOS using 'swipe to delete'" src="_images/List_deleting_rows_macOS11.gif" width="400" />
-<img alt="List deleting rows on iPhone using 'swipe to delete'" src="_images/List_deleting_rows_iPhoneSE_iOS14.gif" width="300" />
+<img alt="List deleting rows on macOS using 'swipe to delete'" src="_images/List_deleting_rows_macOS11.gif" width="400" />  <img alt="List deleting rows on iPhone using 'swipe to delete'" src="_images/List_deleting_rows_iPhoneSE_iOS14.gif" width="300" />
 
 ---
 
@@ -147,8 +143,7 @@ Be aware: **you cannot move elements between different sections!**
 
 As you can see on the screenshot below, the section header and footers on macOS Big Sur are easily overlooked in the default styling. For the iPhone we see again a known default style for headers.
 
-<img alt="List with sections on macOS" src="_images/List_grouped_in_sections_macOS11.png" width="400" />
-<img alt="List with sections on iPhone" src="_images/List_grouped_in_sections_iPhoneSE_iOS14.png" width="300" />
+<img alt="List with sections on macOS" src="_images/List_grouped_in_sections_macOS11.png" width="400" />  <img alt="List with sections on iPhone" src="_images/List_grouped_in_sections_iPhoneSE_iOS14.png" width="300" />
 
 ---
 
@@ -167,16 +162,9 @@ List styles have to be applied onto the `List` by adding for the modifier `.list
 
 Below are a few screenshots for different list styles on iPhone.
 
-<img alt="List with PlainListStyle on iPhone" src="_images/ListStyle_Plain_iPhoneSE_iOS14.png" width="300" />
+<img alt="List with PlainListStyle on iPhone" src="_images/ListStyle_Plain_iPhoneSE_iOS14.png" width="300" />  <img alt="List with InsetListStyle on iPhone" src="_images/ListStyle_Inset_iPhoneSE_iOS14.png" width="300" />  <img alt="List with GroupedListStyle on iPhone" src="_images/ListStyle_Grouped_iPhoneSE_iOS14.png" width="300" />
 
-<img alt="List with InsetListStyle on iPhone" src="_images/ListStyle_Inset_iPhoneSE_iOS14.png" width="300" />
-
-<img alt="List with GroupedListStyle on iPhone" src="_images/ListStyle_Grouped_iPhoneSE_iOS14.png" width="300" />
-
-<img alt="List with InsetGroupedListStyle on iPhone" src="_images/ListStyle_InsetGrouped_iPhoneSE_iOS14.png" width="300" />
-
-<img alt="List with SidebarListStyle on iPhone" src="_images/ListStyle_Sidebar_iPhoneSE_iOS14.png" width="300" />
-
+<img alt="List with InsetGroupedListStyle on iPhone" src="_images/ListStyle_InsetGrouped_iPhoneSE_iOS14.png" width="300" />  <img alt="List with SidebarListStyle on iPhone" src="_images/ListStyle_Sidebar_iPhoneSE_iOS14.png" width="300" />
 
 ---
 
