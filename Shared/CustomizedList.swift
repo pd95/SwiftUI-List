@@ -1,13 +1,13 @@
 //
-//  BasicList.swift
-//  BasicList
+//  CustomizedList.swift
+//  CustomizedList
 //
-//  Created by Philipp on 03.09.21.
+//  Created by Philipp on 04.09.21.
 //
 
 import SwiftUI
 
-struct BasicList: View {
+struct CustomizedList: View {
 
     struct DataWrapper: Identifiable {
         let id = UUID()
@@ -30,6 +30,7 @@ struct BasicList: View {
     ].map(DataWrapper.init)
 
     @State private var selection = Set<UUID>()
+    private var rowHeight: CGFloat = 16
 
     var body: some View {
         List(selection: $selection) {
@@ -38,13 +39,13 @@ struct BasicList: View {
                         .font(.caption)
             ) {
                 ForEach(data) { element in
-                    Text(element.text)
+                    Row(text: element.text, isSelected: selection.contains(element.id))
                 }
                 .onMove(perform: moveSelection)
                 .onDelete(perform: delete)
             }
         }
-        .navigationTitle("Basic List")
+        .navigationTitle("Customized List")
     }
 
     func delete(_ indices: IndexSet) {
@@ -58,10 +59,44 @@ struct BasicList: View {
             data.move(fromOffsets: indices, toOffset: offset)
         }
     }
+
+    struct Row: View {
+        let text: String
+        let isSelected: Bool
+
+        @State private var rowSize: CGSize?
+
+        var body: some View {
+            Text(text)
+                .fixedSize(horizontal: false, vertical: true)
+                .listRowBackground(Group {
+                        if isSelected {
+                            Color.clear
+                        } else {
+                            Color.orange
+                        }
+                    }
+                )
+                .background(GeometryReader { proxy in
+                    let _ = handleSize(proxy.frame(in: .local).size)
+                    Color.clear
+                })
+                .frame(maxHeight: rowSize?.height)
+        }
+
+        private func handleSize(_ size: CGSize) {
+            print("size", size, text.prefix(5))
+            if rowSize != size && size.width != 10 {
+                DispatchQueue.main.async {
+                    rowSize = size
+                }
+            }
+        }
+    }
 }
 
-struct BasicList_Previews: PreviewProvider {
+struct CustomizedList_Previews: PreviewProvider {
     static var previews: some View {
-        BasicList()
+        CustomizedList()
     }
 }

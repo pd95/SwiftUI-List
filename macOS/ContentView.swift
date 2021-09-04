@@ -11,7 +11,6 @@ struct ContentView: View {
     @AppStorage("selectedTab") var selectedTab = 1
 
     var body: some View {
-//        BasicList()
         TabView(selection: $selectedTab) {
             MinimalList()
                 .tabItem({ Label("Minimal", systemImage: "list.dash") })
@@ -20,6 +19,10 @@ struct ContentView: View {
             BasicList()
                 .tabItem({ Label("Basic", systemImage: "list.dash") })
                 .tag(2)
+
+            CustomizedList()
+                .tabItem({ Label("Custom", systemImage: "list.dash") })
+                .tag(3)
         }
         .padding()
     }

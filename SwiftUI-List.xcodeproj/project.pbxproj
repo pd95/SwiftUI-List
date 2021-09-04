@@ -19,6 +19,8 @@
 		17B72AB626E2AAAB00A4B9CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B72AB426E2AA9D00A4B9CB /* ContentView.swift */; };
 		17B72AB826E2B17A00A4B9CB /* ListPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B72AB726E2B17800A4B9CB /* ListPlayground.swift */; };
 		17B72AB926E2B17A00A4B9CB /* ListPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B72AB726E2B17800A4B9CB /* ListPlayground.swift */; };
+		17B72ABB26E3A35A00A4B9CB /* CustomizedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B72ABA26E3A35500A4B9CB /* CustomizedList.swift */; };
+		17B72ABC26E3A35B00A4B9CB /* CustomizedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B72ABA26E3A35500A4B9CB /* CustomizedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,7 @@
 		17B72AB026E2A78900A4B9CB /* MinimalList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalList.swift; sourceTree = "<group>"; };
 		17B72AB426E2AA9D00A4B9CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17B72AB726E2B17800A4B9CB /* ListPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlayground.swift; sourceTree = "<group>"; };
+		17B72ABA26E3A35500A4B9CB /* CustomizedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 			children = (
 				17B72A9026E2A45E00A4B9CB /* SwiftUI_ListApp.swift */,
 				17B72AAC26E2A5DF00A4B9CB /* BasicList.swift */,
+				17B72ABA26E3A35500A4B9CB /* CustomizedList.swift */,
 				17B72AB026E2A78900A4B9CB /* MinimalList.swift */,
 				17B72AB726E2B17800A4B9CB /* ListPlayground.swift */,
 				17B72A9226E2A45F00A4B9CB /* Assets.xcassets */,
@@ -202,6 +206,7 @@
 				17B72AA026E2A45F00A4B9CB /* ContentView.swift in Sources */,
 				17B72A9E26E2A45F00A4B9CB /* SwiftUI_ListApp.swift in Sources */,
 				17B72AAD26E2A5DF00A4B9CB /* BasicList.swift in Sources */,
+				17B72ABB26E3A35A00A4B9CB /* CustomizedList.swift in Sources */,
 				17B72AB126E2A7EA00A4B9CB /* MinimalList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +219,7 @@
 				17B72AB626E2AAAB00A4B9CB /* ContentView.swift in Sources */,
 				17B72A9F26E2A45F00A4B9CB /* SwiftUI_ListApp.swift in Sources */,
 				17B72AAE26E2A5DF00A4B9CB /* BasicList.swift in Sources */,
+				17B72ABC26E3A35B00A4B9CB /* CustomizedList.swift in Sources */,
 				17B72AB226E2A7EB00A4B9CB /* MinimalList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

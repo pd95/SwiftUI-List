@@ -22,6 +22,12 @@ struct ContentView: View {
                 .wrappedInNavigationView()
                 .tabItem({ Label("Basic", systemImage: "list.dash") })
                 .tag(2)
+
+            CustomizedList()
+                .environment(\.editMode, .constant(.active))
+                .wrappedInNavigationView()
+                .tabItem({ Label("Custom", systemImage: "list.dash") })
+                .tag(3)
         }
     }
 }
