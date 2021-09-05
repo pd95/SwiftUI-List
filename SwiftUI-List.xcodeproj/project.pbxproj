@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173FCEDD26E3F02600F3C5BF /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173FCEDC26E3F02600F3C5BF /* SizePreferenceKey.swift */; };
+		173FCEDE26E3F02600F3C5BF /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173FCEDC26E3F02600F3C5BF /* SizePreferenceKey.swift */; };
 		17B72A9E26E2A45F00A4B9CB /* SwiftUI_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B72A9026E2A45E00A4B9CB /* SwiftUI_ListApp.swift */; };
 		17B72A9F26E2A45F00A4B9CB /* SwiftUI_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B72A9026E2A45E00A4B9CB /* SwiftUI_ListApp.swift */; };
 		17B72AA026E2A45F00A4B9CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B72A9126E2A45E00A4B9CB /* ContentView.swift */; };
@@ -24,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		173FCEDC26E3F02600F3C5BF /* SizePreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePreferenceKey.swift; sourceTree = "<group>"; };
 		17B72A9026E2A45E00A4B9CB /* SwiftUI_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ListApp.swift; sourceTree = "<group>"; };
 		17B72A9126E2A45E00A4B9CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17B72A9226E2A45F00A4B9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 				17B72ABA26E3A35500A4B9CB /* CustomizedList.swift */,
 				17B72AB026E2A78900A4B9CB /* MinimalList.swift */,
 				17B72AB726E2B17800A4B9CB /* ListPlayground.swift */,
+				173FCEDC26E3F02600F3C5BF /* SizePreferenceKey.swift */,
 				17B72A9226E2A45F00A4B9CB /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -202,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173FCEDD26E3F02600F3C5BF /* SizePreferenceKey.swift in Sources */,
 				17B72AB826E2B17A00A4B9CB /* ListPlayground.swift in Sources */,
 				17B72AA026E2A45F00A4B9CB /* ContentView.swift in Sources */,
 				17B72A9E26E2A45F00A4B9CB /* SwiftUI_ListApp.swift in Sources */,
@@ -215,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173FCEDE26E3F02600F3C5BF /* SizePreferenceKey.swift in Sources */,
 				17B72AB926E2B17A00A4B9CB /* ListPlayground.swift in Sources */,
 				17B72AB626E2AAAB00A4B9CB /* ContentView.swift in Sources */,
 				17B72A9F26E2A45F00A4B9CB /* SwiftUI_ListApp.swift in Sources */,

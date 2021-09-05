@@ -77,19 +77,14 @@ struct CustomizedList: View {
                         }
                     }
                 )
-                .background(GeometryReader { proxy in
-                    let _ = handleSize(proxy.frame(in: .local).size)
-                    Color.clear
-                })
+                .readSize(onChange: handleSize)
                 .frame(maxHeight: rowSize?.height)
         }
 
         private func handleSize(_ size: CGSize) {
             print("size", size, text.prefix(5))
             if rowSize != size && size.width != 10 {
-                DispatchQueue.main.async {
-                    rowSize = size
-                }
+                rowSize = size
             }
         }
     }
