@@ -30,7 +30,7 @@ On macOS the list looks even bolder: there are no visible dividers.
 
 <img alt="Minimal List on iPhone" src="images/Minimal_iPhoneSE_iOS14.png" width="300" />  <img alt="Minimal List on macOS" src="images/Minimal_macOS11.png" width="400" />
 
-The full source-code of those views can be found in [Shared/MinimalList.swift](https://github.com/pd95/SwiftUI-List/blob/main/Shared/MinimalList.swift).
+The full source-code of those views can be found in [Shared/MinimalList.swift](https://github.com/pd95/SwiftUI-List/blob/808df83f50e9c22ac8deed628bf907f7bd88a697/Shared/MinimalList.swift).
 
 ---
 
@@ -152,7 +152,7 @@ As you can see on the screenshot below, the section header and footers on macOS 
 
 <img alt="List with sections on macOS" src="images/List_grouped_in_sections_macOS11.png" width="400" />  <img alt="List with sections on iPhone" src="images/List_grouped_in_sections_iPhoneSE_iOS14.png" width="300" />
 
-The full source-code for this view can be found in [Shared/BasicList.swift](https://github.com/pd95/SwiftUI-List/blob/main/Shared/BasicList.swift).
+The full source-code for this view can be found in [Shared/BasicList.swift](https://github.com/pd95/SwiftUI-List/blob/808df83f50e9c22ac8deed628bf907f7bd88a697/Shared/BasicList.swift).
 
 ---
 
@@ -306,7 +306,7 @@ As shown below, we have now reached our goal for this chapter: A `List` with a *
 
 <img alt="List row background using custom background color and correct selection color" src="images/List_customized_row_background_macOS11.gif" />
 
-The full source-code for this view can be found in [Shared/CustomizedList.swift](https://github.com/pd95/SwiftUI-List/blob/main/Shared/CustomizedList.swift).
+The full source-code for this view can be found in [Shared/CustomizedList.swift](https://github.com/pd95/SwiftUI-List/blob/808df83f50e9c22ac8deed628bf907f7bd88a697/Shared/CustomizedList.swift).
 
 ---
 
